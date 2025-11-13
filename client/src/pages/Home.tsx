@@ -35,18 +35,17 @@ export default function Home() {
     if (!generatedImage) return;
     
     try {
-      const response = await fetch(generatedImage);
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = `morkoai-${Date.now()}.png`;
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      window.URL.revokeObjectURL(url);
+      const link = document.createElement("a");
+      link.href = generatedImage;
+      link.download = `morkoai-${Date.now()}.png`;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
       toast.success("Görsel indirildi! 📥");
     } catch (error) {
+      console.error("Download error:", error);
       toast.error("İndirme başarısız oldu");
     }
   };

@@ -21,3 +21,7 @@
 - Kayıt/giriş sistemi yok - herkes kullanabilir
 - Guest kullanıcılar için userId = 0
 - Pollinations AI ücretsiz API kullanılacak
+
+## Hata Düzeltmeleri
+
+- [x] Görsel indirme hatası düzelt (CORS/dosya indirme mekanizması)
