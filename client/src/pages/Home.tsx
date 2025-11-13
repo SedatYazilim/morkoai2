@@ -181,8 +181,8 @@ export default function Home() {
 
           <Card className="bg-card/60 backdrop-blur border-2">
             <CardContent className="p-6 text-center space-y-3">
-              <div className="w-12 h-12 mx-auto bg-secondary/20 flex items-center justify-center">
-                <ImageIcon className="w-6 h-6 text-secondary" />
+              <div className="w-12 h-12 mx-auto bg-green-500/20 flex items-center justify-center">
+                <Sparkles className="w-6 h-6 text-green-500" />
               </div>
               <h3 className="text-base font-semibold">Hızlı</h3>
               <p className="text-sm text-muted-foreground">
@@ -193,8 +193,8 @@ export default function Home() {
 
           <Card className="bg-card/60 backdrop-blur border-2">
             <CardContent className="p-6 text-center space-y-3">
-              <div className="w-12 h-12 mx-auto bg-accent/20 flex items-center justify-center">
-                <Download className="w-6 h-6 text-accent" />
+              <div className="w-12 h-12 mx-auto bg-orange-500/20 flex items-center justify-center">
+                <Download className="w-6 h-6 text-orange-500" />
               </div>
               <h3 className="text-base font-semibold">Kaydet</h3>
               <p className="text-sm text-muted-foreground">
